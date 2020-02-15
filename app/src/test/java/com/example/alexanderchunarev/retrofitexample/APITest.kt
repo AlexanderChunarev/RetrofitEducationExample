@@ -30,7 +30,7 @@ class APITest {
             val album = repository.fetchAlbumById(ID.toLong())
             show(album.data.tracks) // show all tracks
 
-            Assert.assertEquals(ID.toLong(), album.id)
+            Assert.assertEquals(ID.toLong(), "")
             Assert.assertEquals(ALBUM_TITLE, album.title)
             Assert.assertEquals(ALBUM_SIZE, album.data.tracks.size)
         }
