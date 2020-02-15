@@ -12,7 +12,7 @@ class APITest {
     private lateinit var repository: DeezerRepository
 
     companion object {
-        private const val ID =           302127
+        private const val ID = 302127
         private const val ALBUM_SIZE = 14
         private const val ALBUM_TITLE = "Discovery"
     }
@@ -34,6 +34,8 @@ class APITest {
             Assert.assertEquals(ALBUM_SIZE, album.data.tracks.size)
         }
     }
+
+
 
     private fun <T> show(list: List<T>) {
         list.forEach {
