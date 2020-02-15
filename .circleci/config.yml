@@ -11,6 +11,8 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+    - store_test_results:
+    path: test-results
 general:
     artifacts:
         - /home/ubuntu/project-name/app/build/outputs/apk/
