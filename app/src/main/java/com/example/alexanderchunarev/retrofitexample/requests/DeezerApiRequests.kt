@@ -8,5 +8,5 @@ import retrofit2.http.Path
 interface DeezerApiRequests {
 
     @GET("album/{id}")
-    fun getAlbumById(@Path("id") id: Long) : Call<Album>
+    fun getAlbumById(@Path("id") id: Long): Call<Album>
 }
