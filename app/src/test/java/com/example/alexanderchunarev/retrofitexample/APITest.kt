@@ -12,7 +12,7 @@ class APITest {
     private lateinit var repository: DeezerRepository
 
     companion object {
-        private const val ID      = 302127
+        private const val ID =           302127
         private const val ALBUM_SIZE = 14
         private const val ALBUM_TITLE = "Discovery"
     }
