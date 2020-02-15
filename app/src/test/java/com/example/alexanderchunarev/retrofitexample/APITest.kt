@@ -20,8 +20,7 @@ class APITest {
     @Before
     fun init() {
         serviceBuilder = ServiceBuilder.getInstance()
-        repository = DeezerRepository(
-        )
+        repository = DeezerRepository()
     }
 
     @Test
@@ -35,9 +34,6 @@ class APITest {
             Assert.assertEquals(ALBUM_SIZE, album.data.tracks.size)
         }
     }
-
-
-
 
     private fun <T> show(list: List<T>) {
         list.forEach {
